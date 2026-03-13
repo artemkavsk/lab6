@@ -23,7 +23,7 @@ class Building:
         print(f"Стоимость за м²: {self._price}")
         print(f"Проживающих: {self._residents}")
 
-    # Метод 1
+
     def total_cost(self):
         cost = self._area * self._price
         print(f"Общая стоимость: {cost}")
@@ -42,7 +42,7 @@ class VillageHouse(Building):
         print(f"Тип: {VillageHouse.className}")
         print(f"Площадь участка: {self.land_area} соток")
 
-    # Метод 2
+
     def cost_per_resident(self):
         cost = self._area * self._price
         result = cost / self._residents
@@ -61,14 +61,12 @@ class ApartmentHouse(Building):
         print(f"Тип: {ApartmentHouse.className}")
         print(f"Количество этажей: {self.floors}")
 
-    # Метод 2
+    
     def cost_per_resident(self):
         cost = self._area * self._price
         result = cost / self._residents
         print(f"Стоимость на человека: {result}")
 
-
-# использование
 
 b = Building(120, 50000, 4)
 b.info()
