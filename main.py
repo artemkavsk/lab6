@@ -19,8 +19,8 @@ class Building:
 
     def info(self):
         print(f"Тип: {Building.className}")
-        print(f"Площадь: {self._area} м²")
-        print(f"Стоимость за м²: {self._price}")
+        print(f"Площадь: {self._area} кв.м.")
+        print(f"Стоимость за кв.м.: {self._price}")
         print(f"Проживающих: {self._residents}")
 
 
